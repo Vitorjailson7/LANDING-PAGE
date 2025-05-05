@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FixPC Solutions - Suporte Técnico Profissional</title>
+  <!-- Link para o Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <a href="segunda_tela.html" class="btn-custom">Ir para Segunda Página</a>
+
+
+  <style>
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #ffffff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1a73e8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1a73e8;
+    }
+
+    .cta-button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      background-color: #218838;
+    }
+
+    /* WhatsApp Flutuante */
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .whatsapp-icon:hover {
+      background-color: #1ebd5a;
+    }
+
+    .hero-section {
+      padding: 140px 20px 80px;
+      background: #1a73e8;
+      color: white;
+      text-align: center;
+    }
+
+    .form-section, .services-section, .plans-section {
+      padding: 60px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Link leve para segunda página */
+    .second-page-link {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .second-page-link a {
+      color: #1a73e8;
+      text-decoration: underline;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    
+    <div class="logo">FixPC Solutions</div>
+    <nav>
+      <a href="#Benefícios">Serviços</a>
+      <a href="#clientes">Planos</a>
+      <a href="#Caso">Contato</a>
+      <a href="#Perguntas">Perguntas</a>
+      <a href="pagina2.html">Mais</a> <!-- Redireciona para segunda página discretamente -->
+      <a href="#agendamento" class="cta-button">Agende Agora</a>
+    </nav>
+  </header>
+
+
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <h1>Seu Computador com Problemas? Consertamos Rápido e Com Segurança!</h1>
+    <p>Suporte técnico especializado para computadores, redes e dispositivos. Atendimento rápido e profissional.</p>
+    <button class="cta-button" id="contactBtn">Agende Seu Atendimento</button>
+  </div>
+
+  <section class="about-section py-5 bg-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Quem Somos</h2>
+      <p class="lead">Na <strong>FixPC Solutions</strong>, somos especialistas em suporte técnico para computadores, redes e dispositivos. Atendemos tanto pessoas físicas quanto empresas com rapidez, segurança e total transparência.</p>
+      <p>Com mais de 10 anos de experiência no mercado, oferecemos soluções personalizadas — desde consertos simples até manutenção preventiva e upgrades completos. Nosso objetivo é garantir que seus equipamentos funcionem perfeitamente, evitando dores de cabeça e prejuízos.</p>
+      <p>Contamos com uma equipe técnica altamente qualificada, atendimento remoto e presencial, preços acessíveis e um compromisso real com a sua satisfação.</p>
+      <p class="font-weight-bold">Precisa de ajuda agora? Fale com a gente e descubra por que a FixPC Solutions é a escolha certa para cuidar da sua tecnologia.</p>
+    </div>
+  </section>
+
+  <!-- Seção de Benefícios -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2 class="mb-5">Benefícios do nosso Serviço</h2>
+      <div class="row justify-content-center">
+        <!-- Benefício 1: Atendimento Rápido e Eficiente -->
+        <div class="col-md-3">
+          <div class="benefit-item">
+            <i class="fas fa-clock"></i>
+            <h4>Atendimento Rápido e Eficiente</h4>
+            <p>Garantimos que sua solicitação seja atendida rapidamente, com qualidade e agilidade.</p>
+          </div>
+        </div>
+      
+        <!-- Benefício 2: Suporte Remoto ou Presencial -->
+        <div class="col-md-3">
+          <div class="benefit-item">
+            <i class="fas fa-laptop-house"></i>
+            <h4>Suporte Remoto ou Presencial</h4>
+            <p>Oferecemos suporte tanto remoto quanto presencial, adaptando-se às suas necessidades.</p>
+          </div>
+        </div>
+
+        <!-- Benefício 3: Preços Acessíveis e Transparentes -->
+        <div class="col-md-3">
+          <div class="benefit-item">
+            <i class="fas fa-dollar-sign"></i>
+            <h4>Preços Acessíveis e Transparentes</h4>
+            <p>Você paga apenas pelo que precisa, com total transparência e sem surpresas.</p>
+          </div>
+        </div>
+
+        <!-- Benefício 4: Equipe Qualificada e Experiente -->
+        <div class="col-md-3">
+          <div class="benefit-item">
+            <i class="fas fa-users"></i>
+            <h4>Equipe Qualificada e Experiente</h4>
+            <p>Nosso time é composto por profissionais altamente capacitados para resolver qualquer problema técnico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-5">O que nossos clientes dizem</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="homem-satisfeito-com-sinal-aprovado-12922386.webp" alt="Cliente 1" class="rounded-circle mb-3" style="width: 80px;">
+            <p>"A FixPC Solutions fez meu computador funcionar como novo! Atendimento rápido e muito profissional."</p>
+            <h5>João Silva</h5>
+            <p>Cliente Satisfeito</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="mulher.jpg" alt="Cliente 2" class="rounded-circle mb-3" style="width: 80px;">
+            <p>"Recomendo! A equipe foi incrível e solucionou meu problema de rede de forma rápida e eficiente."</p>
+            <h5>Maria Oliveira</h5>
+            <p>Cliente Satisfeita</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="homem2.jpg" alt="Cliente 3" class="rounded-circle mb-3" style="width: 80px;">
+            <p>"Ótimo serviço! Fiquei impressionado com a qualidade e rapidez no suporte remoto."</p>
+            <h5>Paulo Souza</h5>
+            <p>Cliente Feliz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-studies py-5">
+    <div class="container">
+      <h2 class="mb-5 text-center">Estudos de Caso</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="case-study-card">
+            <h4>Recuperação de Dados de HD Danificado</h4>
+            <p>O cliente perdeu arquivos importantes devido a falha no HD. Nosso time fez a recuperação com sucesso, permitindo que ele acessasse tudo novamente.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="case-study-card">
+            <h4>Melhoria de Performance de PC</h4>
+            <p>O computador estava lento e sem desempenho adequado. Após uma análise detalhada e upgrade de hardware, a máquina voltou a funcionar com ótima velocidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="faq py-5">
+    <div class="container">
+      <h2 class="mb-5 text-center">Perguntas Frequentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Como posso agendar um atendimento?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+            <div class="card-body">
+              Você pode agendar um atendimento clicando no botão "Agende Agora" ou entrando em contato diretamente pelo WhatsApp.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                O que está incluso no suporte remoto?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+            <div class="card-body">
+              O suporte remoto inclui diagnóstico, solução de problemas de software e orientações para otimizar seu sistema.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-5">Nossas Certificações e Parcerias</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="CERTIFICADO1.JPG" alt="Certificado 1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="CONNECT.JPG" alt="Parceiro 1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="Certificado2.jpg" alt="Certificado 2" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="blog py-5">
+    <div class="container text-center">
+      <h2 class="mb-5">Dicas e Artigos</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <img src="DESEMPENHO 2.jpg" class="card-img-top" alt="Dica 1">
+            <div class="card-body">
+              <h5 class="card-title">Melhore o desempenho do seu PC</h5>
+              <p class="card-text">Técnicas simples para acelerar seu computador em poucos passos.</p>
+              <a href="#" class="btn btn-link">Leia mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <img src="anti-virus-2.jpg" class="card-img-top" alt="Dica 2">
+            <div class="card-body">
+              <h5 class="card-title">Proteja seu computador</h5>
+              <p class="card-text">Conheça as melhores práticas contra vírus e ameaças online.</p>
+              <a href="#" class="btn btn-link">Leia mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <img src="DOR DE CABEÇA.jpg" class="card-img-top" alt="Dica 3">
+            <div class="card-body">
+              <h5 class="card-title">Hora de trocar o hardware?</h5>
+              <p class="card-text">Descubra quando é a hora certa para fazer upgrade no seu PC.</p>
+              <a href="#" class="btn btn-link">Leia mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+<!-- Seção de Contato Simples -->
+<section class="contato-simples py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Entre em Contato</h2>
+    <form id="contatoForm" class="mx-auto" style="max-width: 400px;">
+      <input type="text" name="nome" placeholder="Seu nome" class="form-control input-pequeno mb-3" required>
+      <input type="email" name="email" placeholder="Seu e-mail" class="form-control input-pequeno mb-3" required>
+      <textarea name="mensagem" rows="3" placeholder="Sua mensagem" class="form-control input-pequeno mb-3" required></textarea>
+      <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<!-- CSS dos Inputs Pequenos -->
+<style>
+  .input-pequeno {
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    height: auto;
+  }
+
+  .contato-simples input,
+  .contato-simples textarea {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .contato-simples button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+</style>
+  
+
+  <section id="contato" class="contato-section py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <!-- Informações de contato -->
+        <div class="col-md-5 mb-4">
+          <h2>Entre em Contato</h2>
+          <p>Estamos prontos para te atender. Escolha o canal que preferir:</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt text-primary"></i> Grau Técnico, Boa Vista - Recife/PE</li>
+            <li><i class="fas fa-envelope text-primary"></i> atendimento@fixpcsolutions.com</li>
+            <li><i class="fas fa-phone-alt text-primary"></i> (81) 9 9999-9999</li>
+            <li><i class="fab fa-whatsapp text-success"></i> <a href="https://wa.me/5581999999999" target="_blank">Atendimento via WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <section class="pricing py-5 bg-light">
+          <div class="container text-center">
+            <h2 class="mb-5">Nossos Planos e Preços</h2>
+            <div class="row">
+              
+              <div class="col-md-4">
+                <div class="card shadow p-4 mb-4">
+                  <h4 class="card-title">Plano Básico</h4>
+                  <p class="card-text">Suporte remoto simples, diagnóstico e soluções rápidas.</p>
+                  <h3>R$99,00</h3>
+                  <a href="https://pagamento.com/checkout/plano-basico" class="btn btn-outline-success" target="_blank">Comprar</a>
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <div class="card shadow p-4 mb-4">
+                  <h4 class="card-title">Plano Completo</h4>
+                  <p class="card-text">Atendimento remoto e presencial, com reparos e manutenção contínuos.</p>
+                  <h3>R$199,00</h3>
+                  <a href="https://pagamento.com/checkout/plano-completo" class="btn btn-outline-success" target="_blank">Comprar</a>
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <div class="card shadow p-4 mb-4">
+                  <h4 class="card-title">Plano VIP</h4>
+                  <p class="card-text">Suporte dedicado 24/7, diagnóstico e manutenção completa.</p>
+                  <h3>R$299,00</h3>
+                  <a href="https://pagamento.com/checkout/plano-vip" class="btn btn-outline-success" target="_blank">Comprar</a>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </section>
+        
+
+  <section id="localizacao" class="localizacao">
+    <div class="container">
+      <h2>Onde Estamos</h2>
+      <p>Suporte técnico especializado para computadores, redes e dispositivos.<br>
+      Atendimento rápido e profissional.</p>
+      <p><strong>Endereço:</strong> Av. Conde da Boa Vista, 800 - Boa Vista, Recife - PE, 50060-000</p>
+  
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.4080991348067!2d-34.8893977!3d-8.0600931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c2020e0555%3A0x800ae242a156e7b1!2sGrau%20T%C3%A9cnico%20-%20Recife%20Boa%20Vista!5e0!3m2!1spt-BR!2sbr!4v1714675408832!5m2!1spt-BR!2sbr" 
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+  
+      <a href="https://www.google.com/maps/dir/?api=1&destination=-8.0600931,-34.8893977" 
+         target="_blank" class="btn btn-maps">
+        Ver rota no Google Maps
+      </a>
+    </div>
+  </section>
+  
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="mb-3">FixPC Solutions</h5>
+          <p class="mb-1">Av. Conde da Boa Vista, 800 - Recife/PE</p>
+          <p class="mb-1">Email: <a href="mailto:atendimento@fixpcsolutions.com" class="text-white">atendimento@fixpcsolutions.com</a></p>
+          <p class="mb-1">Telefone: (81) 9 9999-9999</p>
+          <p class="mb-3">
+            WhatsApp: 
+            <a href="https://wa.me/5581999999999" target="_blank" class="text-success text-decoration-none">
+              Clique aqui para conversar
+            </a>
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end mt-3 mt-md-0 d-flex align-items-end justify-content-md-end">
+          <p class="mb-0 small">&copy; 2025 FixPC Solutions | Todos os direitos reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5581999999999" target="_blank" class="whatsapp-float" title="Fale conosco no WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Quando o formulário for enviado
+    $('#contactForm').submit(function(event) {
+      event.preventDefault(); // Previne o comportamento padrão (não recarregar a página)
+
+      // Redirecionar para a segunda tela (página de agradecimento)
+      window.location.href = 'segunda_tela.html'; // A URL da segunda tela
+    });
+
+    // Abrir formulário de contato ao clicar no botão
+    $('#contactBtn').click(function() {
+      $('html, body').animate({
+        scrollTop: $('.form-section').offset().top
+      }, 1000); // Desloca suavemente até o formulário
+    });
+  </script>
+
+
+
+
+ 
+
+</style>
+
+
+</body>
+</html>
