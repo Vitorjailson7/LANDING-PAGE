@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avaliação - FixPC Solutions</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .thank-you-section {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .thank-you-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      background-color: white;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .star-rating i {
+      color: #ccc;
+      font-size: 24px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .star-rating i.selected {
+      color: #ffc107;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #343a40;
+      color: white;
+      margin-top: 40px;
+    }
+
+    #backButton {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5b;
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="btn btn-primary" id="backButton">
+    <i class="fas fa-arrow-left"></i> Voltar
+  </a>
+
+  <div class="thank-you-section">
+    <h1><i class="fas fa-smile"></i> Obrigado pelo Contato!</h1>
+    <p>Gostaríamos muito de saber sua opinião. Sua avaliação é essencial para melhorarmos nosso serviço!</p>
+  </div>
+
+  <div class="form-container">
+    <h2 class="mb-4 text-center">Deixe sua Avaliação</h2>
+    <form id="feedbackForm">
+      <div class="form-group text-center star-rating">
+        <label for="rating">Avaliação:</label><br/>
+        <i class="fas fa-star" data-value="1"></i>
+        <i class="fas fa-star" data-value="2"></i>
+        <i class="fas fa-star" data-value="3"></i>
+        <i class="fas fa-star" data-value="4"></i>
+        <i class="fas fa-star" data-value="5"></i>
+        <input type="hidden" id="rating" name="rating" required>
+      </div>
+      <div class="form-group">
+        <label for="comments">Comentário</label>
+        <textarea class="form-control" id="comments" rows="4" placeholder="Conte-nos sua experiência..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success btn-block">Enviar Avaliação</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 FixPC Solutions • Todos os direitos reservados</p>
+  </div>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5581999999999" target="_blank" class="whatsapp-float" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Sistema de estrelas interativo
+    const stars = document.querySelectorAll('.star-rating i');
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const value = star.getAttribute('data-value');
+        document.getElementById('rating').value = value;
+
+        stars.forEach(s => s.classList.remove('selected'));
+        for (let i = 0; i < value; i++) {
+          stars[i].classList.add('selected');
+        }
+      });
+    });
+
+    // Envio do formulário
+    $('#feedbackForm').submit(function(event) {
+      event.preventDefault();
+      alert('Obrigado pela sua avaliação!');
+      window.location.href = 'index.html';
+    });
+  </script>
+
+</body>
+</html>
