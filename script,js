@@ -1,0 +1,115 @@
+// Scroll Reveal nos cards de benefício
+ScrollReveal().reveal('.benefit-item', {
+    delay: 200,
+    distance: '30px',
+    origin: 'bottom',
+    interval: 200
+  });
+  
+  // Enviar formulário com alerta de sucesso e redirecionamento
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Mensagem enviada com sucesso! Em breve entraremos em contato.");
+    window.location.href = 'segunda_tela.html'; // Redireciona após envio
+  });
+  
+  // Scroll suave até a seção de agendamento
+  document.getElementById('contactBtn').addEventListener('click', function () {
+    const formSection = document.querySelector('.form-section');
+    formSection.scrollIntoView({ behavior: 'smooth' });
+  });
+  
+  // Botão "Voltar ao Topo"
+  const btnTop = document.getElementById("btnTop");
+  window.addEventListener("scroll", function () {
+    btnTop.style.display = window.scrollY > 400 ? "block" : "none";
+  });
+  btnTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  window.addEventListener("scroll", function () {
+    document.getElementById("btnTop").style.display = window.scrollY > 400 ? "block" : "none";
+  });
+  document.getElementById("btnTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  
+  $('#contactForm').submit(function(event) {
+    event.preventDefault();
+    alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+    window.location.href = 'segunda_tela.html';
+  });
+
+  $('#contactForm').submit(function(event) {
+    event.preventDefault(); // Previne o recarregamento da página
+  
+    // Mensagem de sucesso (pode ser um alert ou algo mais elaborado)
+    alert("Mensagem enviada com sucesso!");
+  
+    // Exibir botão para ir à segunda página
+    $('#goToSecondPage').fadeIn();
+  });
+
+  // Script para animação suave ao rolar para as seções
+document.addEventListener('DOMContentLoaded', function () {
+    // Animação de scroll suave para seções
+    const btnAgendar = document.querySelector('.btn.btn-light');
+    const agendamentoSection = document.querySelector('#agendamento');
+
+    if (btnAgendar) {
+        btnAgendar.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: agendamentoSection.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Animação no hover dos planos
+    const pricingCards = document.querySelectorAll('.pricing-card');
+    pricingCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = "translateY(-10px)";
+            card.style.boxShadow = "0 8px 15px rgba(0, 0, 0, 0.2)";
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = "translateY(0)";
+            card.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.1)";
+        });
+    });
+});
+
+// Script para WhatsApp flutuante
+(function () {
+    var chatButton = document.createElement('a');
+    chatButton.href = "https://wa.me/5599999999999";
+    chatButton.target = "_blank";
+    chatButton.style.position = "fixed";
+    chatButton.style.bottom = "20px";
+    chatButton.style.right = "20px";
+    chatButton.style.backgroundColor = "#25d366";
+    chatButton.style.borderRadius = "50%";
+    chatButton.style.padding = "15px";
+    chatButton.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.1)";
+    chatButton.style.zIndex = "9999";
+    chatButton.style.transition = "transform 0.3s ease";
+
+    var icon = document.createElement('img');
+    icon.src = "https://upload.wikimedia.org/wikipedia/commons/6/60/WhatsApp.svg"; // Ícone do WhatsApp
+    icon.style.width = "35px";
+    icon.style.height = "35px";
+
+    chatButton.appendChild(icon);
+    document.body.appendChild(chatButton);
+
+    // Hover effect
+    chatButton.addEventListener('mouseover', () => {
+        chatButton.style.transform = "scale(1.1)";
+    });
+
+    chatButton.addEventListener('mouseout', () => {
+        chatButton.style.transform = "scale(1)";
+    });
+})();
