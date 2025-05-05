@@ -1,0 +1,429 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #0062E6, #33AEFF); /* Gradiente azul */
+    color: white;
+    padding: 80px 0;
+}
+
+#hero h2 {
+    font-size: 3rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 2rem; /* Ajusta o tamanho do texto para telas menores */
+    }
+
+    #hero p {
+        font-size: 1.125rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    #contactBtn {
+        font-size: 1.1rem;
+        padding: 12px 24px; /* Ajuste no tamanho do botão */
+    }
+}
+
+/* Botão */
+#contactBtn {
+    border-radius: 50px;
+    font-size: 1.25rem;
+    padding: 14px 28px;
+    transition: background-color 0.3s;
+}
+
+
+/* Estilo adicional para o botão de voltar */
+#backButton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #backButton:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de elevação */
+  }
+  
+  #backButton:active {
+    background-color: #003366; /* Cor mais escura quando o botão é pressionado */
+    transform: translateY(0); /* Retorno ao estado normal */
+  }
+  
+  .benefit-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+ 
+    #btnTop {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      z-index: 1000;
+      font-size: 18px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  
+    .main-header {
+        background-color: #1a73e8;
+        color: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+      
+      .logo i {
+        font-size: 24px;
+      }
+      
+      .whatsapp-btn {
+        border-radius: 50%;
+        padding: 10px 12px;
+        font-size: 18px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+
+      /* Adicionando animações e efeitos de transição */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+header .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #218838;
+}
+
+/* Seção de Testemunhos */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.testimonials .testimonial-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials img {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.testimonials .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.testimonials .btn:hover {
+    background-color: #218838;
+}
+
+/* Efeito para os cards de Planos */
+.pricing .pricing-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing .pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pricing h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #007bff;
+}
+
+.pricing .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.pricing .btn:hover {
+    background-color: #218838;
+}
+
+/* Perguntas Frequentes - Animar a expansão */
+.accordion-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #0056b3;
+}
+
+.accordion-body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Efeito de hover no WhatsApp */
+.contact .btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.localizacao {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .localizacao h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .localizacao p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .mapa {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .btn-maps {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .btn-maps:hover {
+    background-color: #218838;
+  }
+  
+  .mapa-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  
+  .planos-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+  }
+  
+  .plano {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .plano h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .plano .preco {
+    font-size: 2rem;
+    color: #28a745;
+    margin: 20px 0;
+  }
+  
+  .plano .btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+  }
+  
+  .plano.destaque {
+    border: 2px solid #28a745;
+    background-color: #f8fff8;
+  }
+ 
+/* Inputs menores e mais enxutos */
+.form-control,
+textarea {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  height: auto;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #1a73e8;
+}
+
+button.btn {
+  font-size: 14px;
+  padding: 8px 18px;
+}
+
+/* Footer personalizado */
+footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+  color: #28a745; /* Verde estilo WhatsApp */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+footer .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.mapa-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.mapa iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 450px;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-maps {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
