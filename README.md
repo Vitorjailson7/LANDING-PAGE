@@ -28,7 +28,16 @@ A página foi construída com foco em um **layout moderno, intuitivo e responsiv
 ---
 
 ## 📁 Estrutura do Projeto
-
+FixPC-LandingPage/
+├── index.html # Página principal
+├── avaliacao.html # Segunda página com avaliação
+├── assets/
+│ ├── css/
+│ │ └── style.css # Estilos personalizados
+│ ├── js/
+│ │ └── script.js # Scripts de interação
+│ └── images/
+│ └── logo.png # Logo e imagens
 ---
 
 ## 📍 Localização da Empresa
